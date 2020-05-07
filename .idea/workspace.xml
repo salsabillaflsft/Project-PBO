@@ -16,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1bYfYi8Enxc2GWR9BgKqQs24Q2c" />
   <component name="ProjectViewState">
@@ -31,6 +32,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\Documents\IdeaProjects\Project-PBO\src\Assets" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Controller" />
       <recent name="Model" />
@@ -93,5 +97,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588822417405" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588823886592">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588823886592" />
   </component>
 </project>
