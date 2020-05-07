@@ -30,6 +30,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,25 +82,29 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588814792131" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1588822417405">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1588824114765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588822417405" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1588822417405">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588824114765" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1588824114765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588822417405" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1588822417405">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588824114765" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1588824114765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588822417405" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1588822417405">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588824114765" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1588824114765">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588822417405" />
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588823886592">
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588824114765" />
+    <state x="142" y="4" key="SettingsEditor" timestamp="1588824139570">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588823886592" />
+    <state x="142" y="4" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1588824139570" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588824125131">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588824125131" />
   </component>
 </project>

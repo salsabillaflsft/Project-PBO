@@ -20,7 +20,7 @@ public class ViewMain extends JFrame {
     Color orange  = new Color(230, 184, 156);
     Color red = new Color(254, 147, 140);
 
-    ImageIcon img = new ImageIcon("src\\home.jpg");
+    ImageIcon img = new ImageIcon("src\\Assets\\home.jpg");
     JLabel logo = new JLabel(img);
 
     Font font = new Font("Helvetica",Font.PLAIN,25);
