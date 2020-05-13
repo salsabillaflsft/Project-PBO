@@ -12,21 +12,29 @@ public class ViewMain extends JFrame {
     JTextField tfPass = new JTextField();
 
     public JButton btnLogin = new JButton("Log In");
-    public JButton btnRegis = new JButton("Register");
 
-    Color bg = new Color(66, 129, 164);
-    Color grey = new Color(156, 175, 183);
-    Color wheat = new Color(234, 210, 172);
-    Color orange  = new Color(230, 184, 156);
-    Color red = new Color(254, 147, 140);
+    Color salem  = new Color(249, 239, 234);
+    Color red2 = new Color(150, 54, 54);
+    Color red = new Color(212, 76, 76);
+    Color green2 = new Color(61, 99, 65);
+    Color green = new Color(85, 138, 90);
+    Color yellow = new Color(255, 196, 33);
+    Color pink = new Color(255, 148, 177);
 
-    ImageIcon img = new ImageIcon("src\\Assets\\home.jpg");
+    Color bg = new Color(176, 208, 211);
+    Color puce = new Color(192, 132, 151);
+    Color orange  = new Color(247, 175, 157);
+    Color peach = new Color(247, 227, 175);
+    Color yellow2 = new Color(243, 238, 195);
+
+
+    ImageIcon img = new ImageIcon("src\\Assets\\login.jpg");
     JLabel logo = new JLabel(img);
 
     Font font = new Font("Helvetica",Font.PLAIN,25);
 
     public ViewMain(){
-        getContentPane().setBackground(bg);
+        getContentPane().setBackground(salem);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         setLayout(null);
@@ -37,27 +45,26 @@ public class ViewMain extends JFrame {
         title.setFont(new Font("Helvetica",Font.BOLD,50));
 
         add(logo);
-        logo.setBounds(300,150,626,174);
+        logo.setBounds(100,150,626,417);
 
         add(lUser);
-        lUser.setBounds(425, 350, 200, 25);
+        lUser.setBounds(850, 150, 200, 25);
         lUser.setFont(font);
         add(tfUser);
-        tfUser.setBounds(575, 350, 200, 30);
-        tfUser.setBackground(red);
+        tfUser.setBounds(850, 200, 200, 30);
+        tfUser.setBackground(pink);
         add(lPass);
-        lPass.setBounds(425, 400, 200, 25);
+        lPass.setBounds(850, 250, 200, 25);
         lPass.setFont(font);
         add(tfPass);
-        tfPass.setBounds(575, 400, 200, 30);
-        tfPass.setBackground(red);
+        tfPass.setBounds(850, 300, 200, 30);
+        tfPass.setBackground(pink);
 
         add(btnLogin);
-        btnLogin.setBounds(670, 450, 100, 30);
-        btnLogin.setBackground(wheat);
-        add(btnRegis);
-        btnRegis.setBounds(670, 490, 100, 30);
-        btnRegis.setBackground(orange);
+        btnLogin.setBounds(900, 350, 100, 40);
+        btnLogin.setBackground(green);
+        btnLogin.setForeground(salem);
+
     }
 
     public String getUser(){

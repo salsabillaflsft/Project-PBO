@@ -2,8 +2,6 @@ package Controller;
 
 import Model.ModelMain;
 import View.ViewMain;
-
-import javax.swing.*;
 import java.awt.event.*;
 
 public class ControllerMain {
@@ -14,7 +12,8 @@ public class ControllerMain {
         this.modelmain = modelmain;
         this.viewmain = viewmain;
 
-        viewmain.btnLogin.addActionListener(new ActionListener() {
+
+       viewmain.btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
                 String user = viewmain.getUser();

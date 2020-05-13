@@ -5,7 +5,7 @@ import Model.ModelMain;
 import View.ViewMain;
 
 public class MVC_Main {
-    ViewMain viewmain = new ViewMain();
-    ModelMain modelmain = new ModelMain();
-    ControllerMain controllermain = new ControllerMain(modelmain,viewmain);
+    ViewMain viewMain = new ViewMain();
+    ModelMain modelMain = new ModelMain();
+    ControllerMain controllerMain = new ControllerMain(modelMain,viewMain);
 }
