@@ -1,12 +1,12 @@
 package Controller;
 
+import Model.JavaDatabase;
 import Model.ModelMain;
 import View.ViewHome;
 import View.ViewMain;
 
 import javax.swing.*;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -16,17 +16,19 @@ public class ControllerMain extends javax.swing.JFrame {
     ViewMain viewmain;
     Connection connection = null;
     Statement statement = null;
+    JavaDatabase java = new JavaDatabase();
 
     public ControllerMain(ModelMain modelmain, ViewMain viewmain) {
         //initComponents();
-        try {
+        java.getConnection();
+        /*try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost/restaurant", "root", "");
             statement = connection.createStatement();
             JOptionPane.showMessageDialog(null, "berhasil koneksi");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "koneksi gagal");
-        }
+        }*/
     }
     //this.modelmain = modelmain;
     //this.viewmain = viewmain;

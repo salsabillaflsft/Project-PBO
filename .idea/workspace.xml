@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcce79d-f1eb-45e6-833b-be762cbba0ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_40.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectPBO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectPBO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/Controller/ControllerMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/Controller/ControllerMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/Controller/ControllerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/Controller/ControllerMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/MVC/MVC_Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/MVC/MVC_Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/Model/JavaDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/Model/JavaDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/Model/ModelMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/Model/ModelMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/View/ViewHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/View/ViewHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectPBO/View/ViewMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectPBO/View/ViewMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +126,7 @@
       <workItem from="1589390242551" duration="1832000" />
       <workItem from="1589392109207" duration="1782000" />
       <workItem from="1589393921074" duration="1783000" />
-      <workItem from="1589395735950" duration="859000" />
+      <workItem from="1589395735950" duration="1222000" />
     </task>
     <servers />
   </component>
@@ -179,25 +163,25 @@
     </state>
     <state x="421" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589388514405" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588814792131" />
-    <state width="595" height="162" key="GridCell.Tab.0.bottom" timestamp="1589389243047">
+    <state width="574" height="159" key="GridCell.Tab.0.bottom" timestamp="1589396961392">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589389243047" />
+    <state width="574" height="159" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589396961392" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
-    <state width="595" height="162" key="GridCell.Tab.0.center" timestamp="1589389243046">
+    <state width="574" height="159" key="GridCell.Tab.0.center" timestamp="1589396961391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589389243046" />
+    <state width="574" height="159" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589396961391" />
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
-    <state width="595" height="162" key="GridCell.Tab.0.left" timestamp="1589389243045">
+    <state width="574" height="159" key="GridCell.Tab.0.left" timestamp="1589396961390">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589389243045" />
+    <state width="574" height="159" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589396961390" />
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588825074279" />
-    <state width="595" height="162" key="GridCell.Tab.0.right" timestamp="1589389243047">
+    <state width="574" height="159" key="GridCell.Tab.0.right" timestamp="1589396961391">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589389243047" />
+    <state width="574" height="159" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589396961391" />
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1589389040596">
       <screen x="0" y="0" width="1280" height="680" />
@@ -213,10 +197,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="397" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1589389034348" />
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589396761401">
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589396982430">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589396761401" />
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589396982430" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588824125131" />
     <state x="91" y="0" key="new project wizard" timestamp="1589239993325">
       <screen x="0" y="0" width="1280" height="720" />
