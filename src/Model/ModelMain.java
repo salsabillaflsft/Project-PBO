@@ -4,9 +4,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 public class ModelMain {
 
+    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    static final String DB_URL = "jdbc:mysql://localhost/prakdata";
+    static final String USER = "root";
+    static final String PASS = "";
+
     Statement statement;
+
     public int getBanyakData(){//menghitung jumlah baris
         int jmlData = 0;
         try{
@@ -30,7 +37,6 @@ public class ModelMain {
             int jmlData = 0;
 
             String data[][] = new String[getBanyakData()][3]; //baris, kolom nya ada 4
-
             String query = "Select * from`user`";
             statement = JavaDatabase.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(query);

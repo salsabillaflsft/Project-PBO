@@ -67,6 +67,9 @@ public class ViewMain extends JFrame {
 
     }
 
+    public ViewMain(JFrame jFrame, boolean b) {
+    }
+
     public String getUser(){
         return tfUser.getText();
     }
