@@ -3,12 +3,12 @@ package View;
 import javax.swing.*;
 import java.awt.*;
 
-public class ViewAddSupply extends JFrame {
-    JLabel title = new JLabel("ADD SUPPLY");
-    JLabel title2 = new JLabel("ADD SUPPLY");
+public class ViewEditSupply extends JFrame {
+    JLabel title = new JLabel("EDIT SUPPLY");
+    JLabel title2 = new JLabel("EDIT SUPPLY");
 
     JLabel lSupply = new JLabel("Supply: ");
-    JTextField tfSupply = new JTextField();
+    JComboBox cbSupply = new JComboBox();
     JLabel lJumlah = new JLabel("Jumlah: ");
     JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
@@ -22,7 +22,7 @@ public class ViewAddSupply extends JFrame {
 
 
     public JButton btnHome = new JButton("Home");
-    public JButton btnAdd = new JButton("Add");
+    public JButton btnEdit = new JButton("Edit");
     public JButton btnReset = new JButton("Reset");
 
     Color salem  = new Color(249, 239, 234);
@@ -46,7 +46,7 @@ public class ViewAddSupply extends JFrame {
     Font font2 = new Font("Garamond",Font.PLAIN,20);
 
 
-    public ViewAddSupply(){
+    public ViewEditSupply(){
         getContentPane().setBackground(salem);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -54,13 +54,13 @@ public class ViewAddSupply extends JFrame {
         setBounds(400,50,1200,700);
 
         add(title);
-        title.setBounds(320,50,800,50);
+        title.setBounds(315,50,800,50);
         title.setFont(new Font("Garamond",Font.BOLD,50));
-        title.setForeground(orange);
+        title.setForeground(blue2);
         add(title2);
         title2.setBounds(330,100,800,50);
         title2.setFont(new Font("Garamond",Font.BOLD,45));
-        title2.setForeground(peach);
+        title2.setForeground(blue);
 
         add(logo);
         logo.setBounds(700,10,422,634);
@@ -68,8 +68,8 @@ public class ViewAddSupply extends JFrame {
         add(lSupply);
         lSupply.setBounds(150,180,200,35);
         lSupply.setFont(font2);
-        add(tfSupply);
-        tfSupply.setBounds(330,180,300,35);
+        add(cbSupply);
+        cbSupply.setBounds(330,180,300,35);
 
         add(lJumlah);
         lJumlah.setBounds(150,230,200,35);
@@ -101,23 +101,22 @@ public class ViewAddSupply extends JFrame {
         add(cbSupplier);
         cbSupplier.setBounds(430,430,200,35);
 
-        add(btnAdd);
-        btnAdd.setBounds(530, 480, 100, 50);
-        btnAdd.setFont(font);
-        btnAdd.setBackground(green);
+        add(btnEdit);
+        btnEdit.setBounds(530, 480, 100, 50);
+        btnEdit.setFont(font);
+        btnEdit.setBackground(green2);
+        btnEdit.setForeground(salem);
         add(btnReset);
         btnReset.setBounds(530, 550, 100, 50);
         btnReset.setFont(font);
-        btnReset.setBackground(red);
+        btnReset.setBackground(red2);
+        btnReset.setForeground(salem);
 
         add(btnHome);
         btnHome.setBounds(30, 55, 75, 50);
         btnHome.setFont(font);
         btnHome.setBackground(blue);
         btnHome.setForeground(blue2);
-    }
-    public String getSupply(){
-        return tfSupply.getText();
     }
     public String getJumlah(){
         return tfJumlah.getText();
