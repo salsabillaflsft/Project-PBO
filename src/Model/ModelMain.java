@@ -6,15 +6,8 @@ import java.sql.Statement;
 
 
 public class ModelMain {
-
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/prakdata";
-    static final String USER = "root";
-    static final String PASS = "";
-
     Statement statement;
-
-    public int getBanyakData(){//menghitung jumlah baris
+    /*public int getBanyakData(){//menghitung jumlah baris
         int jmlData = 0;
         try{
             statement = JavaDatabase.getConnection().createStatement();
@@ -30,20 +23,20 @@ public class ModelMain {
             System.out.println("SQL Error");
             return 0;
         }
-    }
+    }*/
 
-    public String[][] logIn(){
+    public String[][] logIn(String Username, String Password){
         try{
             int jmlData = 0;
 
-            String data[][] = new String[getBanyakData()][3]; //baris, kolom nya ada 4
-            String query = "Select * from`user`";
+            String data[][] = new String[1][3]; //baris, kolom nya ada 3
+            String query = "Select * from`user` WHERE `username` = '"+ Username +"' AND `password` = '"+ Password +"'";
             statement = JavaDatabase.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){ //lanjut kedata selanjutnya jmlData bertambah
-                data[jmlData][0] = resultSet.getString("id_user"); //kolom nama harus sama besar kecilnya dgn database
-                data[jmlData][1] = resultSet.getString("user");
-                data[jmlData][2] = resultSet.getString("pass");
+                data[0][0] = resultSet.getString("id_user"); //kolom nama harus sama besar kecilnya dgn database
+                data[0][1] = resultSet.getString("username");
+                data[0][2] = resultSet.getString("password");
                 jmlData++; //barisnya berpindah terus
             }
             return data;
@@ -54,5 +47,4 @@ public class ModelMain {
             return null;
         }
     }
-
 }
