@@ -5,20 +5,19 @@ import View.ViewMain;
 import java.awt.event.*;
 
 public class ControllerMain {
-    ModelMain modelmain;
-    ViewMain viewmain;
+    ModelMain modelMain;
+    ViewMain viewMain;
 
-    public ControllerMain(ModelMain modelmain, ViewMain viewmain){
-        this.modelmain = modelmain;
-        this.viewmain = viewmain;
+    public ControllerMain(ModelMain modelMain, ViewMain viewMain){
+        this.modelMain = modelMain;
+        this.viewMain = viewMain;
 
-
-       viewmain.btnLogin.addActionListener(new ActionListener() {
+       viewMain.btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
-                String user = viewmain.getUser();
-                String pass = viewmain.getPass();
-                String dataLogin[][]=modelmain.logIn();
+                String user = viewMain.getUser();
+                String pass = viewMain.getPass();
+               // String dataLogin[][]=viewMain;
             }
         });
     }
