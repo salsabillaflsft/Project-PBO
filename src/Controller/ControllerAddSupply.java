@@ -5,11 +5,6 @@ import Model.ModelKategori;
 import Model.ModelSupply;
 import View.ViewAddSupply;
 
-<<<<<<< HEAD
-=======
-import javax.swing.*;
-import javax.swing.table.TableModel;
->>>>>>> 9755404e0b5040c69f9ad7512f0fbddbaf1527d8
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

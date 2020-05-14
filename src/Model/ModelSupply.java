@@ -23,7 +23,7 @@ public class ModelSupply {
     public String[][] readSupply(){
         try {
             int jmlData = 0;
-            String data[][] = new String[getBanyakData()][6];
+            String data[][] = new String[getBanyakData()][3];
             String query = "SELECT * FROM `supply`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
