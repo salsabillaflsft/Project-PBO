@@ -11,7 +11,7 @@ public class ViewSupply extends JFrame{
 
     public JButton btnHome = new JButton("Home");
 
-    JTable tabel;
+    public JTable tabel;
     DefaultTableModel tableModel;
     JScrollPane jScrollPane;
     Object namaKolom[] = {"Supply","Jumlah","Kategori","Tanggal Pengiriman","Tanggal Penerimaan","Supplier","Supplier Contact"};

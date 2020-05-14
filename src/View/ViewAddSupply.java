@@ -8,15 +8,15 @@ public class ViewAddSupply extends JFrame {
     JLabel title2 = new JLabel("ADD SUPPLY");
 
     JLabel lSupply = new JLabel("Supply: ");
-    JTextField tfSupply = new JTextField();
+    public JTextField tfSupply = new JTextField();
     JLabel lJumlah = new JLabel("Jumlah: ");
-    JTextField tfJumlah = new JTextField();
+    public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
     JComboBox cbKategori = new JComboBox();
     JLabel lTanggal = new JLabel("Tanggal Pengiriman: ");
-    JTextField tfTanggal = new JTextField();
+    public JTextField tfTanggal = new JTextField();
     JLabel lTanggal2 = new JLabel("Tanggal Penerimaan: ");
-    JTextField tfTanggal2 = new JTextField();
+    public JTextField tfTanggal2 = new JTextField();
     JLabel lSupplier = new JLabel("Supplier: ");
     JComboBox cbSupplier = new JComboBox();
 

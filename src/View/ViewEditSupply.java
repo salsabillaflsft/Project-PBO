@@ -10,13 +10,13 @@ public class ViewEditSupply extends JFrame {
     JLabel lSupply = new JLabel("Supply: ");
     JComboBox cbSupply = new JComboBox();
     JLabel lJumlah = new JLabel("Jumlah: ");
-    JTextField tfJumlah = new JTextField();
+    public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
     JComboBox cbKategori = new JComboBox();
     JLabel lTanggal = new JLabel("Tanggal Pengiriman: ");
-    JTextField tfTanggal = new JTextField();
+    public JTextField tfTanggal = new JTextField();
     JLabel lTanggal2 = new JLabel("Tanggal Penerimaan: ");
-    JTextField tfTanggal2 = new JTextField();
+    public JTextField tfTanggal2 = new JTextField();
     JLabel lSupplier = new JLabel("Supplier: ");
     JComboBox cbSupplier = new JComboBox();
 
