@@ -5,6 +5,11 @@ import Model.ModelKategori;
 import Model.ModelSupply;
 import View.ViewAddSupply;
 
+<<<<<<< HEAD
+=======
+import javax.swing.*;
+import javax.swing.table.TableModel;
+>>>>>>> 9755404e0b5040c69f9ad7512f0fbddbaf1527d8
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,8 +23,8 @@ public class ControllerAddSupply {
         this.modelSupply = modelSupply;
         /*
         if (modelSupply.getBanyakData2() != 0){
-            ArrayList<String> readNamaKategori = modelSupply.readNamaKategori();
-            viewAddSupply.table.setModel(new JTable(readNamaKategori, viewAddSupply.namaKolom)).getModelkategori());
+            String[][] readNamaKategori = modelSupply.readKategori();
+            viewAddSupply.table.setModel((TableModel) new JTable(readNamaKategori, viewAddSupply.namaKolom));
             updateDataCombo(modelSupply.readNamaKategori());
         } else {
             JOptionPane.showMessageDialog(null, "Data Masih Kosong");

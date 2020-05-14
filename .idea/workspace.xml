@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcce79d-f1eb-45e6-833b-be762cbba0ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ControllerAddSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerAddSupply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewAddSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewAddSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelSupply.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,7 @@
       <workItem from="1589416539247" duration="1782000" />
       <workItem from="1589418349814" duration="925000" />
       <workItem from="1589422549170" duration="1654000" />
-      <workItem from="1589424356372" duration="1079000" />
+      <workItem from="1589424356372" duration="1788000" />
     </task>
     <servers />
   </component>
@@ -227,19 +226,19 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1589389040596" />
     <state x="142" y="4" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1588824139570" />
-    <state x="337" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1589407472105">
+    <state x="337" y="176" key="com.intellij.ide.util.TipDialog" timestamp="1589426167972">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="176" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589407472105" />
+    <state x="337" y="176" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589426167972" />
     <state x="337" y="186" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1589239974675" />
     <state x="397" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589389034348">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="397" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1589389034348" />
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589425436099">
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589426298308">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589425436099" />
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589426298308" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588824125131" />
     <state x="91" y="0" key="new project wizard" timestamp="1589239993325">
       <screen x="0" y="0" width="1280" height="720" />
