@@ -7,12 +7,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class ModelSupply {
+public class ModelSupplier {
     Statement statement;
     Connection connection;
-    public void insertSupply(String id_supply, String nama_produk, String jumlah_produk){
-        try{
-            String query = "INSERT INTO `supply` (` `, `nama_produk`, `jumlah_produk`) VALUES ('"+id_supply+"','"+nama_produk+"','"+jumlah_produk+"')";
+    public void insertSupplier(String id_supplier, String nama_supplier, String contact){
+        try {
+            String query = "INSERT INTO `supplier`( ` `,`nama_supplier`, `contact`) " +
+                    "VALUES ('"+id_supplier+"','"+nama_supplier+"','"+contact+"')";
             statement = (Statement) connection.createStatement();
             statement.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Data Berhasil Dimasukkan");
@@ -21,16 +22,16 @@ public class ModelSupply {
         }
     }
 
-    public String[][] readSupply(){
+    public String[][] readSupplier(){
         try {
             int jmlData = 0;
             String data[][] = new String[getBanyakData()][3];
-            String query = "SELECT * FROM `supply` JOIN `kategori` ON `supply`.`id_kategori` = `kategori`.`id_kategori` JOIN `supplier` ON `supply`.`id_supplier` = `supplier`.`id_supplier` ";
+            String query = "SELECT * FROM `supplier`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
-                data[jmlData][0] = resultSet.getString("id_supply");
-                data[jmlData][1] = resultSet.getString("nama_produk");
-                data[jmlData][2] = resultSet.getString("jumlah_produk");
+                data[jmlData][0] = resultSet.getString("id_supplier");
+                data[jmlData][1] = resultSet.getString("nama_supplier");
+                data[jmlData][2] = resultSet.getString("contact");
                 jmlData++;
             }
             return data;
@@ -39,13 +40,13 @@ public class ModelSupply {
         }
     }
 
-    public ArrayList<String> readNamaSupply(){
+    public ArrayList<String> readNamaSupplier(){
         try {
             ArrayList<String> data = new ArrayList<>();
-            String query = "SELECT * FROM `supply` JOIN `kategori` ON `supply`.`id_kategori` = `kategori`.`id_kategori` JOIN `supplier` ON `supply`.`id_supplier` = `supplier`.`id_supplier` ";
+            String query = "Select * from`supplier`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
-                data.add(resultSet.getString("id_supply"));
+                data.add(resultSet.getString("id_supplier"));
             }
             return data;
         } catch (SQLException e) {
@@ -56,7 +57,7 @@ public class ModelSupply {
     public int getBanyakData(){
         try {
             int jmlData = 0;
-            String query = "SELECT * FROM `supply` JOIN `kategori` ON `supply`.`id_kategori` = `kategori`.`id_kategori` JOIN `supplier` ON `supply`.`id_supplier` = `supplier`.`id_supplier` ";
+            String query = "SELECT * FROM `supplier`";
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while(resultSet.next()){
@@ -68,9 +69,9 @@ public class ModelSupply {
         }
     }
 
-    public void deleteSupply(String id_supply, String nama_produk, String jumlah_produk){
+    public void deleteSupplier(String id_supplier, String nama_supplier, String contact){
         try {
-            String query = "DELETE FROM `supply` WHERE `id_supply` = '"+id_supply+"',`nama_produk`='" + nama_produk + "',`jumlah_produk`='" + jumlah_produk + "' WHERE `id_supply` = '" + id_supply + "'";
+            String query = "DELETE FROM `supplier` WHERE `id_supplier` = '"+id_supplier+"',`nama_supplier`='" + nama_supplier + "',`contact`='" + contact + "' WHERE `id_supplier` = '" + id_supplier + "'";
             statement = (Statement) connection.createStatement();
             statement.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Data Berhasil Dihapus");
@@ -79,9 +80,9 @@ public class ModelSupply {
         }
     }
 
-    public void updateSupply(String id_supply, String nama_produk, String jumlah_produk){
+    public void updateSupplier(String id_supplier, String nama_supplier, String contact){
         try {
-            String query = "UPDATE `supply` SET `id_supply` = '"+id_supply+"',`nama_produk`='" + nama_produk + "',`jumlah_produk`='" + jumlah_produk + "' WHERE `id_supply` = '" + id_supply + "'";
+            String query = "UPDATE `supplier` SET `id_supplier` = '"+id_supplier+"',`nama_supplier`='" + nama_supplier + "',`contact`='" + contact + "' WHERE `id_supplier` = '" + id_supplier + "'";
             statement = (Statement) connection.createStatement();
             statement.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Data Berhasil Diperbarui");
@@ -90,4 +91,3 @@ public class ModelSupply {
         }
     }
 }
-
