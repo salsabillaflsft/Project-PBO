@@ -19,7 +19,7 @@ public class ControllerAddSupply {
         /*
         if (modelSupply.getBanyakData2() != 0){
             String[][] readNamaKategori = modelSupply.readKategori();
-            viewAddSupply.table.setModel((TableModel) new JTable(readNamaKategori, viewAddSupply.namaKolom));
+            viewAddSupply.table.setModel((TableModel) new JTable(readNamaKategori, viewAddSupply.namaKolom)).getModelkategori());
             updateDataCombo(modelSupply.readNamaKategori());
         } else {
             JOptionPane.showMessageDialog(null, "Data Masih Kosong");
