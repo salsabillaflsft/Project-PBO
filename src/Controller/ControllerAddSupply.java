@@ -6,6 +6,7 @@ import Model.ModelSupply;
 import View.ViewAddSupply;
 
 import javax.swing.*;
+import javax.swing.table.TableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -21,8 +22,8 @@ public class ControllerAddSupply {
         this.modelKategori = modelKategori;
 
         if (modelSupply.getBanyakData2() != 0){
-            ArrayList<String> readNamaKategori = modelSupply.readNamaKategori();
-            viewAddSupply.table.setModel(new JTable(readNamaKategori, viewAddSupply.namaKolom)).getModelkategori());
+            String[][] readNamaKategori = modelSupply.readKategori();
+            viewAddSupply.table.setModel((TableModel) new JTable(readNamaKategori, viewAddSupply.namaKolom));
             updateDataCombo(modelSupply.readNamaKategori());
         } else {
             JOptionPane.showMessageDialog(null, "Data Masih Kosong");

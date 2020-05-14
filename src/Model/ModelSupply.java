@@ -80,6 +80,22 @@ public class ModelSupply {
             return 0;
         }
     }
+    public String[][] readKategori(){
+        try {
+            int jmlData = 0;
+            String data[][] = new String[getBanyakData()][2];
+            String query = "SELECT * FROM `kategori`";
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()){
+                data[jmlData][0] = resultSet.getString("id_kategori");
+                data[jmlData][1] = resultSet.getString("nama_kategori");
+                jmlData++;
+            }
+            return data;
+        } catch (SQLException e) {
+            return null;
+        }
+    }
     public ArrayList<String> readNamaKategori(){
         try {
             ArrayList<String> data = new ArrayList<>();
