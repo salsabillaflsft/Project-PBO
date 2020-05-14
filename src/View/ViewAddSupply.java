@@ -5,7 +5,6 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
 public class ViewAddSupply extends JFrame {
-    public JComboBox cbKategori = new JComboBox();
     JLabel title = new JLabel("ADD SUPPLY");
     JLabel title2 = new JLabel("ADD SUPPLY");
 
@@ -14,13 +13,9 @@ public class ViewAddSupply extends JFrame {
     JLabel lJumlah = new JLabel("Jumlah: ");
     public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
-
-    JLabel lTanggal = new JLabel("Tanggal Pengiriman: ");
-    public JTextField tfTanggal = new JTextField();
-    JLabel lTanggal2 = new JLabel("Tanggal Penerimaan: ");
-    public JTextField tfTanggal2 = new JTextField();
+    public JComboBox cbKategori = new JComboBox();
     JLabel lSupplier = new JLabel("Supplier: ");
-    JComboBox cbSupplier = new JComboBox();
+    public JComboBox cbSupplier = new JComboBox();
 
 
     public JButton btnHome = new JButton("Home");
@@ -119,14 +114,12 @@ public class ViewAddSupply extends JFrame {
     public String getJumlah(){
         return tfJumlah.getText();
     }
-    /*
     public String getKategori(){ return cbKategori.getSelectedItem().toString();}
-    public String getSupplier(){ return cbSupplier.getSelectedItem().toString();}*/
+    public String getSupplier(){ return cbSupplier.getSelectedItem().toString();}
 
     public Object[] getNamaKolom() {
         return namaKolom;
     }
-
     public void setNamaKolom(Object[] namaKolom) {
         this.namaKolom = namaKolom;
     }

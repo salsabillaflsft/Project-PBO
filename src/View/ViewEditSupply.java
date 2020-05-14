@@ -1,6 +1,7 @@
 package View;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
 public class ViewEditSupply extends JFrame {
@@ -8,13 +9,13 @@ public class ViewEditSupply extends JFrame {
     JLabel title2 = new JLabel("EDIT SUPPLY");
 
     JLabel lSupply = new JLabel("Supply: ");
-    JComboBox cbSupply = new JComboBox();
+    public JComboBox cbSupply = new JComboBox();
     JLabel lJumlah = new JLabel("Jumlah: ");
     public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
-    JComboBox cbKategori = new JComboBox();
+    public JComboBox cbKategori = new JComboBox();
     JLabel lSupplier = new JLabel("Supplier: ");
-    JComboBox cbSupplier = new JComboBox();
+    public JComboBox cbSupplier = new JComboBox();
 
 
     public JButton btnHome = new JButton("Home");
@@ -41,8 +42,14 @@ public class ViewEditSupply extends JFrame {
     Font font = new Font("Garamond",Font.ITALIC,20);
     Font font2 = new Font("Garamond",Font.PLAIN,20);
 
-
+    public JTable table;
+    JScrollPane scrollPane;
+    DefaultTableModel tableModel;
+    public Object[] namaKolom= {"id_supply", "kategori","supplier", "nama_produk", "jumlah_produk"};
     public ViewEditSupply(){
+        tableModel = new DefaultTableModel(getNamaKolom(), 0);
+        table = new JTable(tableModel);
+        scrollPane = new JScrollPane(table);
         getContentPane().setBackground(salem);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -102,8 +109,19 @@ public class ViewEditSupply extends JFrame {
         btnHome.setBackground(blue);
         btnHome.setForeground(blue2);
     }
+
+    public String getSupply(){return cbSupply.getSelectedItem().toString(); }
     public String getJumlah(){
         return tfJumlah.getText();
+    }
+    public String getKategori(){ return cbKategori.getSelectedItem().toString();}
+    public String getSupplier(){ return cbSupplier.getSelectedItem().toString();}
+
+    public Object[] getNamaKolom() {
+        return namaKolom;
+    }
+    public void setNamaKolom(Object[] namaKolom) {
+        this.namaKolom = namaKolom;
     }
 
 }

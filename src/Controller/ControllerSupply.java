@@ -33,7 +33,7 @@ public class ControllerSupply {
         viewSupply.tabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                super.mousePressed(e);
                 int baris = viewSupply.tabel.getSelectedRow();
                 int kolom = viewSupply.tabel.getSelectedColumn();
 
@@ -42,9 +42,9 @@ public class ControllerSupply {
 
                int input = JOptionPane.showConfirmDialog(null, "Apa anda ingin menghapus supply " + dataterpilih + "?", "Pilih Opsi...", JOptionPane.YES_NO_OPTION);
                 if (input == 0) {
-                    //modelSupply.deleteSupply(dataterpilih);
-                    String dataContact[][] = modelSupply.readSupply();
-                    viewSupply.tabel.setModel(new JTable(dataContact,viewSupply.namaKolom).getModel());
+                    modelSupply.deleteSupply(dataterpilih);
+                    String newData[][] = modelSupply.readSupply();
+                    viewSupply.tabel.setModel(new JTable(newData,viewSupply.namaKolom).getModel());
                 } else {
                     JOptionPane.showMessageDialog(null, "Tidak Jadi Dihapus");
                 }

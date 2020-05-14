@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ViewLogout extends JFrame{
-    JLabel title = new JLabel("RICA RICI");
-
+    JLabel title = new JLabel("123180141 - 123180144");
 
     public JButton btnLogin = new JButton("Kembali Login");
 
@@ -37,7 +36,7 @@ public class ViewLogout extends JFrame{
         setBounds(400,50,1200,700);
 
         add(title);
-        title.setBounds(470,50,500,50);
+        title.setBounds(330,50,800,50);
         title.setFont(new Font("Helvetica",Font.BOLD,50));
 
         add(logo);
