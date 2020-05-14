@@ -7,23 +7,6 @@ import java.sql.Statement;
 
 public class ModelMain {
     Statement statement;
-    /*public int getBanyakData(){//menghitung jumlah baris
-        int jmlData = 0;
-        try{
-            statement = JavaDatabase.getConnection().createStatement();
-            String query = "Select * from `restaurant`";
-            ResultSet resultSet = statement.executeQuery(query);
-            while (resultSet.next()){ //lanjut kedata selanjutnya jmlData bertambah
-                jmlData++;
-            }
-            return jmlData;
-
-        }catch(SQLException e){
-            System.out.println(e.getMessage());
-            System.out.println("SQL Error");
-            return 0;
-        }
-    }*/
 
     public String[][] logIn(String Username, String Password){
         try{
