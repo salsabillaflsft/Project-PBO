@@ -1,3 +1,4 @@
+<?xml version="1.8" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcce79d-f1eb-45e6-833b-be762cbba0ea" name="Default Changelist" comment="">
@@ -12,6 +13,9 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="144" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -200,17 +204,25 @@
     </state>
     <state x="421" y="111" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589388514405" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1588814792131" />
+    <state width="1237" height="167" key="GridCell.Tab.0.bottom" timestamp="1589428958124">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="167" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589428958124" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
+    <state width="1237" height="167" key="GridCell.Tab.0.center" timestamp="1589428958124">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="167" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589428958124" />
     <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
+    <state width="1237" height="167" key="GridCell.Tab.0.left" timestamp="1589428958124">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="167" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589428958124" />
     <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1588825074279" />
+    <state width="1237" height="167" key="GridCell.Tab.0.right" timestamp="1589428958124">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="167" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589428958124" />
     <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1588825074280" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1589389040596">
       <screen x="0" y="0" width="1280" height="680" />
@@ -243,5 +255,12 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="616" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1589414836840" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1589429000064">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589429000064" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_PBO$Main.ic" NAME="Main Coverage Results" MODIFIED="1589428958106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
