@@ -13,10 +13,6 @@ public class ViewEditSupply extends JFrame {
     public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
     JComboBox cbKategori = new JComboBox();
-    JLabel lTanggal = new JLabel("Tanggal Pengiriman: ");
-    public JTextField tfTanggal = new JTextField();
-    JLabel lTanggal2 = new JLabel("Tanggal Penerimaan: ");
-    public JTextField tfTanggal2 = new JTextField();
     JLabel lSupplier = new JLabel("Supplier: ");
     JComboBox cbSupplier = new JComboBox();
 
@@ -83,31 +79,19 @@ public class ViewEditSupply extends JFrame {
         add(cbKategori);
         cbKategori.setBounds(430,280,200,35);
 
-        add(lTanggal);
-        lTanggal.setFont(font2);
-        lTanggal.setBounds(150,330,200,35);
-        add(tfTanggal);
-        tfTanggal.setBounds(330,330,300,35);
-
-        add(lTanggal2);
-        lTanggal2.setFont(font2);
-        lTanggal2.setBounds(150,380,200,35);
-        add(tfTanggal2);
-        tfTanggal2.setBounds(330,380,300,35);
-
         add(lSupplier);
         lSupplier.setFont(font2);
-        lSupplier.setBounds(330,430,200,35);
+        lSupplier.setBounds(330,330,200,35);
         add(cbSupplier);
-        cbSupplier.setBounds(430,430,200,35);
+        cbSupplier.setBounds(430,330,200,35);
 
         add(btnEdit);
-        btnEdit.setBounds(530, 480, 100, 50);
+        btnEdit.setBounds(530, 380, 100, 50);
         btnEdit.setFont(font);
         btnEdit.setBackground(green2);
         btnEdit.setForeground(salem);
         add(btnReset);
-        btnReset.setBounds(530, 550, 100, 50);
+        btnReset.setBounds(530, 450, 100, 50);
         btnReset.setFont(font);
         btnReset.setBackground(red2);
         btnReset.setForeground(salem);
@@ -121,10 +105,5 @@ public class ViewEditSupply extends JFrame {
     public String getJumlah(){
         return tfJumlah.getText();
     }
-    public String getTanggal(){
-        return tfTanggal.getText();
-    }
-    public String getTanggal2(){
-        return tfTanggal2.getText();
-    }
+
 }

@@ -25,8 +25,6 @@ public class ControllerEditSupply {
             @Override
             public void actionPerformed(ActionEvent e) {
                 viewEditSupply.tfJumlah.setText("");
-                viewEditSupply.tfTanggal.setText("");
-                viewEditSupply.tfTanggal2.setText("");
             }
         });
         viewEditSupply.btnEdit.addActionListener(new ActionListener() {

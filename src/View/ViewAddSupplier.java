@@ -11,10 +11,15 @@ public class ViewAddSupplier extends JFrame {
     public JTextField tfSupplier = new JTextField();
     JLabel lContact = new JLabel("Contact: ");
     public JTextField tfContact = new JTextField();
+    JLabel lKategori = new JLabel("Nama Kategori: ");
+    public JTextField tfKategori = new JTextField();
+
 
     public JButton btnHome = new JButton("Home");
     public JButton btnAdd = new JButton("Add");
     public JButton btnReset = new JButton("Reset");
+    public JButton btnAdd2 = new JButton("Add");
+    public JButton btnReset2 = new JButton("Reset");
 
     Color salem = new Color(249, 239, 234);
     Color red2 = new Color(150, 54, 54);
@@ -62,6 +67,13 @@ public class ViewAddSupplier extends JFrame {
         tfSupplier.setBounds(100, 230, 300, 35);
         tfSupplier.setBackground(orange);
 
+        add(lKategori);
+        lKategori.setBounds(800, 200, 200, 35);
+        lKategori.setFont(font2);
+        add(tfKategori);
+        tfKategori.setBounds(800, 230, 300, 35);
+        tfKategori.setBackground(peach);
+
         add(lContact);
         lContact.setBounds(100, 270, 200, 35);
         lContact.setFont(font2);
@@ -78,6 +90,15 @@ public class ViewAddSupplier extends JFrame {
         btnReset.setFont(font);
         btnReset.setBackground(red);
 
+        add(btnAdd2);
+        btnAdd2.setBounds(800, 280, 100, 40);
+        btnAdd2.setFont(font);
+        btnAdd2.setBackground(green);
+        add(btnReset2);
+        btnReset2.setBounds(800, 330, 100, 40);
+        btnReset2.setFont(font);
+        btnReset2.setBackground(red);
+
 
         add(btnHome);
         btnHome.setBounds(30, 55, 75, 50);
@@ -87,10 +108,15 @@ public class ViewAddSupplier extends JFrame {
     }
 
     public String getNama() {
+
         return tfSupplier.getText();
     }
 
     public String getContact() {
         return tfContact.getText();
     }
+    public String getKategori() {
+        return tfKategori.getText();
+    }
+
 }

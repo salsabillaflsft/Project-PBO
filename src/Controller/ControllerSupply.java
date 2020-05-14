@@ -17,7 +17,12 @@ public class ControllerSupply {
     public ControllerSupply(ViewSupply viewSupply, ModelSupply modelSupply){
         this.viewSupply = viewSupply;
         this.modelSupply = modelSupply;
-
+        if (modelSupply.getBanyakData() != 0) {
+            String data[][] = modelSupply.readSupply();
+            viewSupply.tabel.setModel((new JTable(data, viewSupply.namaKolom)).getModel());
+        } else {
+            JOptionPane.showMessageDialog(null, "Data Tidak Ada");
+        }
         viewSupply.btnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

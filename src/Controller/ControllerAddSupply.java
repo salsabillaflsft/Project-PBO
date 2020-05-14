@@ -15,7 +15,7 @@ public class ControllerAddSupply {
         this.viewAddSupply = viewAddSupply;
         this.modelSupply = modelSupply;
 
-       /* if (modelSupply.getBanyakData2() != 0){
+      /* if (modelSupply.getBanyakData2() != 0){
             ArrayList<String> readNamaKategori = modelSupply.readNamaKategori();
             //viewAddSupply.getKategori(readNamaKategori,viewAddSupply.namaKolom).getModel());
             updateDataCombo(modelSupply.readNamaKategori());
@@ -35,8 +35,6 @@ public class ControllerAddSupply {
             public void actionPerformed(ActionEvent e) {
                 viewAddSupply.tfSupply.setText("");
                 viewAddSupply.tfJumlah.setText("");
-                viewAddSupply.tfTanggal.setText("");
-                viewAddSupply.tfTanggal2.setText("");
             }
         });
         viewAddSupply.btnAdd.addActionListener(new ActionListener() {
@@ -48,11 +46,10 @@ public class ControllerAddSupply {
             }
         });
     }
-    /*
-    private void updateDataCombo(ArrayList<String> readNamaKategori) {
-        viewAddSupply.getKategori().removeAllItems();
+   /* private void updateDataCombo(ArrayList<String> readNamaKategori) {
+        viewAddSupply.getKategori();
         for (String item : readNamaKategori) {
-            viewAddSupply.getKategori().addItem(item);
+            viewAddSupply.getKategori();
         }
     }*/
 }

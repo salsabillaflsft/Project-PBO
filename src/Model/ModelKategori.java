@@ -10,17 +10,6 @@ import java.util.ArrayList;
 public class ModelKategori {
     Statement statement;
     Connection connection;
-    public void insertKategori(String id_kategori, String nama_kategori){
-        try {
-            String query = "INSERT INTO `kategori`(` `,`nama_kategori`) " +
-                    "VALUES ('"+id_kategori+"','"+nama_kategori+"')";
-            statement = (Statement) connection.createStatement();
-            statement.executeUpdate(query);
-            JOptionPane.showMessageDialog(null, "Data Berhasil Dimasukkan");
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }
 
     public String[][] readKategori(){
         try {

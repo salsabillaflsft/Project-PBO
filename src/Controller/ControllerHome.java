@@ -1,9 +1,6 @@
 package Controller;
 
-import MVC.MVC_AddSupply;
-import MVC.MVC_EditSupply;
-import MVC.MVC_Logout;
-import MVC.MVC_Supply;
+import MVC.*;
 import View.ViewHome;
 
 import java.awt.event.ActionEvent;
@@ -26,6 +23,13 @@ public class ControllerHome {
             public void actionPerformed(ActionEvent e) {
                 viewHome.setVisible(false);
                 MVC_AddSupply mvc_addSupply = new MVC_AddSupply();
+            }
+        });
+        viewHome.btnAdd2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                viewHome.setVisible(false);
+                MVC_AddSupplier mvc_addSupplier = new MVC_AddSupplier();
             }
         });
         viewHome.btnEdit.addActionListener(new ActionListener() {

@@ -30,11 +30,24 @@ public class ControllerAddSupplier {
                 modelAddSupplier.addSupplier(nama,contact);
             }
         });
+        viewAddSupplier.btnAdd2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String kategori = viewAddSupplier.getKategori();
+                modelAddSupplier.addKategori(kategori);
+            }
+        });
         viewAddSupplier.btnReset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 viewAddSupplier.tfSupplier.setText("");
                 viewAddSupplier.tfContact.setText("");
+            }
+        });
+        viewAddSupplier.btnReset2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                viewAddSupplier.tfKategori.setText("");
             }
         });
     }
