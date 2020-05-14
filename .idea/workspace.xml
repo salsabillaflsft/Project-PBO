@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcce79d-f1eb-45e6-833b-be762cbba0ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelKategori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelSupply.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +147,8 @@
       <workItem from="1589412917951" duration="1785000" />
       <workItem from="1589414731660" duration="1781000" />
       <workItem from="1589416539247" duration="1782000" />
-      <workItem from="1589418349814" duration="322000" />
+      <workItem from="1589418349814" duration="925000" />
+      <workItem from="1589422549170" duration="273000" />
     </task>
     <servers />
   </component>
