@@ -1,8 +1,7 @@
-import MVC.MVC_AddSupplier;
+import MVC.MVC_Main;
 
 public class Main {
     public static void main(String[] args) {
-       //MVC_Main mvc_main = new MVC_Main();
-        MVC_AddSupplier mvc_addSupplier = new MVC_AddSupplier();
+        MVC_Main mvc_main = new MVC_Main();
     }
 }

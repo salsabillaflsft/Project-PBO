@@ -1,6 +1,7 @@
 package Controller;
 
 import MVC.MVC_Home;
+import Model.ModelKategori;
 import Model.ModelSupply;
 import View.ViewAddSupply;
 
@@ -10,14 +11,15 @@ import java.awt.event.ActionListener;
 public class ControllerAddSupply {
     ViewAddSupply viewAddSupply;
     ModelSupply modelSupply;
+    ModelKategori modelKategori;
 
     public ControllerAddSupply(ViewAddSupply viewAddSupply,  ModelSupply modelSupply){
         this.viewAddSupply = viewAddSupply;
         this.modelSupply = modelSupply;
-
-      /* if (modelSupply.getBanyakData2() != 0){
+        /*
+        if (modelSupply.getBanyakData2() != 0){
             ArrayList<String> readNamaKategori = modelSupply.readNamaKategori();
-            //viewAddSupply.getKategori(readNamaKategori,viewAddSupply.namaKolom).getModel());
+            viewAddSupply.table.setModel(new JTable(readNamaKategori, viewAddSupply.namaKolom)).getModelkategori());
             updateDataCombo(modelSupply.readNamaKategori());
         } else {
             JOptionPane.showMessageDialog(null, "Data Masih Kosong");
@@ -45,11 +47,9 @@ public class ControllerAddSupply {
                 modelSupply.insertSupply(nama_produk,jumlah_produk);
             }
         });
+
     }
-   /* private void updateDataCombo(ArrayList<String> readNamaKategori) {
-        viewAddSupply.getKategori();
-        for (String item : readNamaKategori) {
-            viewAddSupply.getKategori();
-        }
-    }*/
+
+    //private void updateDataCombo(ArrayList<String> readNamaKategori) {}
+
 }

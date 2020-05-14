@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fcce79d-f1eb-45e6-833b-be762cbba0ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelKategori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelSupplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ControllerAddSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerAddSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ViewAddSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewAddSupply.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,9 +100,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -152,7 +150,9 @@
       <workItem from="1589412917951" duration="1785000" />
       <workItem from="1589414731660" duration="1781000" />
       <workItem from="1589416539247" duration="1782000" />
-      <workItem from="1589418349814" duration="322000" />
+      <workItem from="1589418349814" duration="925000" />
+      <workItem from="1589422549170" duration="1654000" />
+      <workItem from="1589424356372" duration="1079000" />
     </task>
     <servers />
   </component>
@@ -160,14 +160,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="20" key="#Project_Structure" timestamp="1588814007528">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="233" y="20" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1588814007528" />
-    <state x="690" y="99" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589388721549">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1589426219230">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="690" y="99" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1589388721549" />
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1589426219230" />
+    <state x="233" y="20" key="#Project_Structure/0.0.1280.720@0.0.1280.720" timestamp="1588814007528" />
+    <state x="690" y="99" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589424038835">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="690" y="99" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1589424038835" />
     <state x="466" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589389123772">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -180,14 +181,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="50" y="0" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.720@0.0.1280.720" timestamp="1588815401260" />
-    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589407481017">
+    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589423290601">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1589407481017" />
+    <state x="490" y="230" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1589423290601" />
+    <state x="657" y="24" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1589425308767">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="657" y="24" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589425308767" />
     <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589418262801">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1589418262801" />
+    <state x="529" y="0" key="CommitChangelistDialog2" timestamp="1589423286518">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="529" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589423286518" />
     <state x="421" y="111" key="FileChooserDialogImpl" timestamp="1589388514405">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -227,19 +236,19 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="397" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1589389034348" />
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589418671784">
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589425436099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589418671784" />
+    <state x="450" y="264" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589425436099" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1588824125131" />
     <state x="91" y="0" key="new project wizard" timestamp="1589239993325">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="91" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1589239993325" />
-    <state x="724" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1589391462228">
+    <state x="695" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1589424589297">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="724" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1589391462228" />
+    <state x="695" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1589424589297" />
     <state x="616" y="153" key="run.anything.popup" timestamp="1589414836840">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

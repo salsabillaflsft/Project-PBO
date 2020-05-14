@@ -1,9 +1,11 @@
 package View;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 
 public class ViewAddSupply extends JFrame {
+    public JComboBox cbKategori = new JComboBox();
     JLabel title = new JLabel("ADD SUPPLY");
     JLabel title2 = new JLabel("ADD SUPPLY");
 
@@ -12,7 +14,11 @@ public class ViewAddSupply extends JFrame {
     JLabel lJumlah = new JLabel("Jumlah: ");
     public JTextField tfJumlah = new JTextField();
     JLabel lKategori = new JLabel("Kategori: ");
-    JComboBox cbKategori = new JComboBox();
+
+    JLabel lTanggal = new JLabel("Tanggal Pengiriman: ");
+    public JTextField tfTanggal = new JTextField();
+    JLabel lTanggal2 = new JLabel("Tanggal Penerimaan: ");
+    public JTextField tfTanggal2 = new JTextField();
     JLabel lSupplier = new JLabel("Supplier: ");
     JComboBox cbSupplier = new JComboBox();
 
@@ -41,8 +47,14 @@ public class ViewAddSupply extends JFrame {
     Font font = new Font("Garamond",Font.ITALIC,20);
     Font font2 = new Font("Garamond",Font.PLAIN,20);
 
-
+    public JTable table;
+    DefaultTableModel tableModel;
+    JScrollPane scrollPane;
+    public Object[] namaKolom = {"id_kategori", "Nama_kategori"};
     public ViewAddSupply(){
+        tableModel = new DefaultTableModel(getNamaKolom(), 0);
+        table = new JTable(tableModel);
+        scrollPane = new JScrollPane(table);
         getContentPane().setBackground(salem);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
@@ -111,4 +123,11 @@ public class ViewAddSupply extends JFrame {
     public String getKategori(){ return cbKategori.getSelectedItem().toString();}
     public String getSupplier(){ return cbSupplier.getSelectedItem().toString();}*/
 
+    public Object[] getNamaKolom() {
+        return namaKolom;
+    }
+
+    public void setNamaKolom(Object[] namaKolom) {
+        this.namaKolom = namaKolom;
+    }
 }

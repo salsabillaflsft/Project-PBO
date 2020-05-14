@@ -24,12 +24,10 @@ public class ModelSupply {
         try {
             int jmlData = 0;
             String data[][] = new String[getBanyakData()][6];
-            String query = "SELECT * FROM `supply` JOIN `kategori` ON `supply`.`id_kategori` = `kategori`.`id_kategori` JOIN `supplier` ON `supply`.`id_supplier` = `supplier`.`id_supplier`";
+            String query = "SELECT * FROM `supply`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("id_supply");
-                data[jmlData][1] = resultSet.getString("id_kategori");
-                data[jmlData][2] = resultSet.getString("id_supplier");
                 data[jmlData][1] = resultSet.getString("nama_produk");
                 data[jmlData][2] = resultSet.getString("jumlah_produk");
                 jmlData++;
