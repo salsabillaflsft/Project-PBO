@@ -4,6 +4,7 @@ import MVC.MVC_Home;
 import Model.ModelSupply;
 import View.ViewSupply;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -34,14 +35,14 @@ public class ControllerSupply {
                 String dataterpilih = viewSupply.tabel.getValueAt(baris, 0).toString();
                 System.out.println(dataterpilih);
 
-               /* int input = JOptionPane.showConfirmDialog(null, "Apa anda ingin menghapus contact dengan nama " + dataterpilih + "?", "Pilih Opsi...", JOptionPane.YES_NO_OPTION);
+               int input = JOptionPane.showConfirmDialog(null, "Apa anda ingin menghapus supply " + dataterpilih + "?", "Pilih Opsi...", JOptionPane.YES_NO_OPTION);
                 if (input == 0) {
-                    modelSupply.deleteContact(dataterpilih);
-                    String dataContact[][] = modelSupply.readContact();
-                    modelSupply.tabel.setModel(new JTable(dataContact, viewcontact.namaKolom).getModel());
+                    //modelSupply.deleteSupply(dataterpilih);
+                    String dataContact[][] = modelSupply.readSupply();
+                    viewSupply.tabel.setModel(new JTable(dataContact,viewSupply.namaKolom).getModel());
                 } else {
                     JOptionPane.showMessageDialog(null, "Tidak Jadi Dihapus");
-                }*/
+                }
             }
         });
 

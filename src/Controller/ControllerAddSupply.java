@@ -15,6 +15,14 @@ public class ControllerAddSupply {
         this.viewAddSupply = viewAddSupply;
         this.modelSupply = modelSupply;
 
+       /* if (modelSupply.getBanyakData2() != 0){
+            ArrayList<String> readNamaKategori = modelSupply.readNamaKategori();
+            //viewAddSupply.getKategori(readNamaKategori,viewAddSupply.namaKolom).getModel());
+            updateDataCombo(modelSupply.readNamaKategori());
+        } else {
+            JOptionPane.showMessageDialog(null, "Data Masih Kosong");
+        }*/
+
         viewAddSupply.btnHome.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,9 +42,17 @@ public class ControllerAddSupply {
         viewAddSupply.btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                String nama_produk = viewAddSupply.getSupply();
+                String jumlah_produk = viewAddSupply.getJumlah();
+                modelSupply.insertSupply(nama_produk,jumlah_produk);
             }
         });
     }
-
+    /*
+    private void updateDataCombo(ArrayList<String> readNamaKategori) {
+        viewAddSupply.getKategori().removeAllItems();
+        for (String item : readNamaKategori) {
+            viewAddSupply.getKategori().addItem(item);
+        }
+    }*/
 }

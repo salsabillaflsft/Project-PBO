@@ -14,7 +14,7 @@ public class ViewSupply extends JFrame{
     public JTable tabel;
     DefaultTableModel tableModel;
     JScrollPane jScrollPane;
-    Object namaKolom[] = {"Supply","Jumlah","Kategori","Tanggal Pengiriman","Tanggal Penerimaan","Supplier","Supplier Contact"};
+    public Object[] namaKolom = {"Supply","Jumlah","Kategori","Tanggal Pengiriman","Tanggal Penerimaan","Supplier","Supplier Contact"};
     Color salem  = new Color(249, 239, 234);
     Color red2 = new Color(150, 54, 54);
     Color red = new Color(212, 76, 76);

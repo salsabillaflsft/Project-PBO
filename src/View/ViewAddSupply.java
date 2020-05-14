@@ -128,4 +128,7 @@ public class ViewAddSupply extends JFrame {
     public String getTanggal2(){
         return tfTanggal2.getText();
     }
+    public String getKategori(){ return cbKategori.getSelectedItem().toString();}
+    public String getSupplier(){ return cbSupplier.getSelectedItem().toString();}
+
 }
