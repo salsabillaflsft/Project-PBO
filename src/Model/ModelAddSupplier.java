@@ -6,9 +6,9 @@ import java.sql.Statement;
 
 public class ModelAddSupplier {
     Statement statement;
-    public void addSupplier(String nama, String contact) {
+    public void addSupplier(String supplier, String contact) {
         try{
-            String query = "INSERT INTO `supplier` (`id_supplier`,`nama_supplier`,`contact`) VALUES ('0','"+nama+"','"+contact+"')";
+            String query = "INSERT INTO `supplier` (`supplier`,`contact`) VALUES ('"+supplier+"','"+contact+"')";
             statement = JavaDatabase.getConnection().createStatement();
             statement.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Supplier Berhasil Ditambahkan");
@@ -17,9 +17,9 @@ public class ModelAddSupplier {
             JOptionPane.showMessageDialog(null, sql.getMessage());
         }
     }
-    public void addKategori(String nama_kategori){
+    public void addKategori(String kategori){
         try {
-            String query = "INSERT INTO `kategori`(`id_kategori`,`nama_kategori`) " + "VALUES ('0','"+nama_kategori+"')";
+            String query = "INSERT INTO `kategori`(`kategori`) " + "VALUES ('"+kategori+"')";
             statement = JavaDatabase.getConnection().createStatement();
             statement.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Data Berhasil Dimasukkan");
